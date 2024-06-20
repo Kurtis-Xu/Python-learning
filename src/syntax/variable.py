@@ -27,8 +27,15 @@ print(s[0:9:2])  # 第三个数字表示间隔
 # string[起始索引（包含）:结束索引（不包含）:步长]
 # 起始索引默认为0，可省略；结束索引默认为字符串长度值，可省略；步长默认为1，可省略，第二个冒号也可省略
 print(s[:-1])
+print(s[::-1])
 
 # 使用 id(arg) 可以获取变量地址
 print(id(a))
 print(id(b))
 print(id(c))
+
+del s  # 删除变量
+# print(s)  # not defined
+ls = ['a', 'b', 'c']
+del ls[1]
+print(ls)
