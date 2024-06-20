@@ -1,3 +1,7 @@
+v = input('输入：')
+
+print(v)
+
 print('Hello,', 'i\'m', 'kurtis', end='!\n')
 
 year = 2024
