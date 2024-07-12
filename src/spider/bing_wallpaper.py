@@ -8,7 +8,7 @@ months = bs4.BeautifulSoup(requests.get(domain).text, 'html.parser') \
     .find_all('a')
 
 for month in months:
-    image_infos = bs4.BeautifulSoup(requests.get('/'.join([domain, month.get('href')])).text, 'html.parser') \
+    image_infos = bs4.BeautifulSoup(requests.get(f'{domain}/{month.get('href')}').text, 'html.parser') \
         .find('div', class_='w3-row-padding w3-padding-16 w3-center') \
         .find_all('p')
 
